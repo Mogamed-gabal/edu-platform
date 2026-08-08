@@ -29,7 +29,7 @@ export class ChatMessagesService {
       senderId,
       message: dto.message,
       messageType: dto.messageType ?? MessageType.Text,
-    } as unknown as CreateEntityInput<ChatMessage>);
+    });
   }
 
   async getRoomMessages(
