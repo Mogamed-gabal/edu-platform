@@ -1,7 +1,7 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { ChatRoomRepository } from './repositories/chat-room.repository';
 import { ChatRoom } from './entities/chatroom.entity';
-import { CreateEntityInput } from 'src/shared/interfaces/base-repository.interface';
+import { CreateEntityInput } from '@/shared/interfaces/base-repository.interface';
 
 @Injectable()
 export class ChatRoomsService {

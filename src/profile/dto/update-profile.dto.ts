@@ -1,4 +1,3 @@
-// update-profile.dto.ts
 import {
   IsEnum,
   IsObject,
@@ -9,7 +8,7 @@ import {
 } from 'class-validator';
 import { Type } from 'class-transformer';
 import { ApiPropertyOptional } from '@nestjs/swagger';
-import { Gender } from 'src/shared/enums';
+import { Gender } from '../../shared/enums';
 
 export class StudentMetadataDto {
   @ApiPropertyOptional({ description: 'Grade year for student', example: 3 })

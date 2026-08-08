@@ -6,19 +6,19 @@ import { ChatMessage } from '../../chatmessages/entities/chatmessage.entity';
 @Entity('chat_rooms')
 export class ChatRoom extends BaseEntity {
   @Column({ type: 'uuid' })
-  senderId: string;
+  senderId!: string;
 
   @ManyToOne(() => User, { onDelete: 'CASCADE' })
   @JoinColumn({ name: 'senderId' })
-  sender: User;
+  sender!: User;
 
   @Column({ type: 'uuid' })
-  receiverId: string;
+  receiverId!: string;
 
   @ManyToOne(() => User, { onDelete: 'CASCADE' })
   @JoinColumn({ name: 'receiverId' })
-  receiver: User;
+  receiver!: User;
 
   @OneToMany(() => ChatMessage, (message) => message.room)
-  messages: ChatMessage[];
+  messages!: ChatMessage[];
 }

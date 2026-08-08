@@ -10,7 +10,7 @@ import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
 import { PaginationDto } from '../shared/dtos/PaginationDto';
 import { BcryptHelper } from '../shared/helpers/hash.helper';
-import { PaginatedResult } from 'src/shared/interfaces/paginated-result.interface';
+import { PaginatedResult } from '../shared/interfaces/paginated-result.interface';
 import { CACHE_MANAGER } from '@nestjs/cache-manager';
 import type { Cache } from 'cache-manager';
 import { DeepPartial, EntityManager } from 'typeorm';

@@ -1,4 +1,4 @@
-import { IBaseRepository } from 'src/shared/interfaces/base-repository.interface';
+import { IBaseRepository } from '../../../shared/interfaces/base-repository.interface';
 import { ChatMessage } from '../entities/chatmessage.entity';
 import { GetMessagesQueryDto } from '../dto/get-messages-query.dto';
 

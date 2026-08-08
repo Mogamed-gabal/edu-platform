@@ -15,7 +15,7 @@ export class SendMessageDto {
   })
   @IsNotEmpty()
   @IsUUID()
-  roomId: string;
+  roomId!: string;
 
   @ApiProperty({
     description: 'The content of the message',
@@ -23,7 +23,7 @@ export class SendMessageDto {
   })
   @IsNotEmpty()
   @IsString()
-  message: string;
+  message!: string;
 
   @ApiPropertyOptional({
     description: 'Type of the message',

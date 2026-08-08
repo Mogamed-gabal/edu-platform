@@ -5,8 +5,6 @@ import { SendMessageDto } from './dto/create-chatmessage.dto';
 import { GetMessagesQueryDto } from './dto/get-messages-query.dto';
 import { ChatMessage } from './entities/chatmessage.entity';
 import { MessageType } from './enums/message-type.enum';
-import { CreateEntityInput } from '../../shared/interfaces/base-repository.interface';
-
 @Injectable()
 export class ChatMessagesService {
   constructor(
@@ -29,7 +27,7 @@ export class ChatMessagesService {
       senderId,
       message: dto.message,
       messageType: dto.messageType ?? MessageType.Text,
-    });
+    } as any);
   }
 
   async getRoomMessages(

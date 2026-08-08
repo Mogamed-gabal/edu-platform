@@ -8,5 +8,5 @@ export class CreateChatRoomDto {
   })
   @IsNotEmpty()
   @IsUUID()
-  receiverId: string;
+  receiverId!: string;
 }

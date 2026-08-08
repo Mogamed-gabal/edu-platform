@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
-import { BaseRepository } from 'src/shared/repositories/base.repository';
+import { BaseRepository } from '../../../shared/repositories/base.repository';
 import { ChatRoom } from '../entities/chatroom.entity';
 import { IChatRoomRepository } from '../interfaces/chat-room-repository.interface';
 

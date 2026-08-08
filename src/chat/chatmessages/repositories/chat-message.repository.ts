@@ -1,7 +1,8 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
-import { BaseRepository } from 'src/shared/repositories/base.repository';
+import { BaseRepository } from '../../../shared/repositories/base.repository';
 import { ChatMessage } from '../entities/chatmessage.entity';
 import { IChatMessageRepository } from '../interfaces/chat-message-repository.interface';
 import { GetMessagesQueryDto } from '../dto/get-messages-query.dto';
